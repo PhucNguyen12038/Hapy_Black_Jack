@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="ipad9_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Hapy_Back_Jack" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background_table" translatesAutoresizingMaskIntoConstraints="NO" id="uza-UH-Fxi" userLabel="background">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FOk-hi-d4R" userLabel="Card0">
+                                <rect key="frame" x="668" y="878" width="80" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="ZxR-AI-duJ"/>
+                                    <constraint firstAttribute="height" constant="120" id="njF-SP-Uvf"/>
+                                </constraints>
+                                <size key="titleShadowOffset" width="9" height="13"/>
+                                <state key="normal" title="Target">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="pressFirstCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HRh-fK-uDJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L1x-f8-f8v" userLabel="Card1">
+                                <rect key="frame" x="668" y="20" width="80" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="Aq1-ub-6nK"/>
+                                    <constraint firstAttribute="height" constant="120" id="ELq-7d-G79"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="120" id="Vsd-E5-yrS"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="yKz-YS-8xw"/>
+                                </constraints>
+                                <state key="normal" title="Have">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="pressSecondCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EdB-yG-eF1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zEw-8Z-GMr" userLabel="Card3">
+                                <rect key="frame" x="518" y="20" width="80" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="150" id="F7I-FY-jKX"/>
+                                    <constraint firstAttribute="width" constant="80" id="PKH-t2-10Z"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="VuF-gG-RkD"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="120" id="ccg-bJ-bWF"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="100" id="moQ-7r-oek"/>
+                                    <constraint firstAttribute="height" constant="120" id="u6f-1U-Gvj"/>
+                                </constraints>
+                                <state key="normal" title="a">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="pressFourthCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BTa-of-LA2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MVR-LA-wPH" userLabel="Card21">
+                                <rect key="frame" x="344" y="20" width="80" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="8Sh-aR-KuS"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="120" id="Ehz-F8-G1w"/>
+                                    <constraint firstAttribute="height" constant="120" id="Fop-HC-WRp"/>
+                                    <constraint firstAttribute="width" constant="80" id="StQ-Xv-Hw1"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="100" id="dse-Vu-jWO"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="150" id="iKL-Mj-3wG"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="100" id="oM5-52-KJY"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="150" id="ulx-o3-7sO"/>
+                                </constraints>
+                                <state key="normal" title="happy">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="pressCard21:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FLs-q7-JR2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LZP-Y1-BlT" userLabel="Card22">
+                                <rect key="frame" x="170" y="20" width="80" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="3u6-d1-V0I"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="150" id="5EZ-7F-Pvj"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="100" id="Fa6-KI-4vO"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="120" id="K7P-vn-Cg6"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="bTU-DE-jRG"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="100" id="fU0-zC-ajx"/>
+                                    <constraint firstAttribute="height" constant="120" id="jkl-xJ-U9J"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="150" id="rzB-kD-wBJ"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="150" id="sky-dg-QnA"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="100" id="yXR-fY-Flm"/>
+                                </constraints>
+                                <state key="normal" title="time">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="pressCard22:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0Jo-kz-McP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zvA-kT-DLQ" userLabel="Card2">
+                                <rect key="frame" x="518" y="878" width="80" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="OUB-DT-h51"/>
+                                    <constraint firstAttribute="width" constant="80" id="Xeo-Mo-kzN"/>
+                                </constraints>
+                                <state key="normal" title="Plan">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="pressThirdCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uGU-os-e44"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7lC-1V-cYT" userLabel="Card11">
+                                <rect key="frame" x="344" y="878" width="80" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="120" id="01b-fE-v5o"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="9FZ-hS-GTm"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="150" id="9Ke-zD-aeO"/>
+                                    <constraint firstAttribute="height" constant="120" id="IVt-r1-WYn"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="100" id="RYe-1L-qPf"/>
+                                    <constraint firstAttribute="width" constant="80" id="TPb-SY-588"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="Motivation">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="pressCard11:" destination="BYZ-38-t0r" eventType="touchUpInside" id="shx-Ji-HA3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qG2-bK-RrB" userLabel="Card13">
+                                <rect key="frame" x="20" y="878" width="80" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="AcY-QW-x1m"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="100" id="BP7-9r-edC"/>
+                                    <constraint firstAttribute="height" constant="120" id="WDb-oT-sZ4"/>
+                                    <constraint firstAttribute="width" constant="80" id="dqm-uF-Cac"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="100" id="e72-h0-PdG"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="150" id="m9h-Nj-iEv"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="120" id="rze-IL-dMT"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="150" id="xHg-gS-NPG"/>
+                                </constraints>
+                                <state key="normal" title="Unkonwn">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="pressCard13:" destination="BYZ-38-t0r" eventType="touchUpInside" id="raA-Ed-1VH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wsv-87-itX" userLabel="Card12">
+                                <rect key="frame" x="170" y="878" width="80" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="150" id="BRU-oG-U5a"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="100" id="GZZ-Em-n7h"/>
+                                    <constraint firstAttribute="width" constant="80" id="LUG-kP-csE"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="100" id="NFX-kf-ih2"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="120" id="S9U-eC-gZg"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="150" id="dF8-SI-aWm"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="100" id="gWl-oo-4ih"/>
+                                    <constraint firstAttribute="height" constant="120" id="rXk-WK-yA1"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="waI-rQ-wES"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="150" id="xmi-qP-zex"/>
+                                </constraints>
+                                <state key="normal" title="Effort">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="pressCard12:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JRY-F4-UDO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gu9-b9-4f5">
+                                <rect key="frame" x="328.5" y="473.5" width="111" height="77"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="111" id="7yT-e4-1MD"/>
+                                    <constraint firstAttribute="height" constant="77" id="C58-ul-yeq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <state key="normal" title="Play">
+                                    <color key="titleColor" red="0.77987370469999995" green="0.0" blue="0.083302783599999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="pressControlGame:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0Xm-td-FnR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gge-eg-ezn" userLabel="Take CardP1">
+                                <rect key="frame" x="328.5" y="609" width="111" height="77"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="111" id="Ooq-dy-sis"/>
+                                    <constraint firstAttribute="height" constant="77" id="p29-yT-9Pt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" title="Take Card">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="takeCardP1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GqT-aw-ss1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ucu-lW-qVY" userLabel="Take CardP2">
+                                <rect key="frame" x="328.5" y="336.5" width="111" height="77"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="111" id="Ct7-P7-I6Z"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="77" id="lKx-eg-8ib"/>
+                                    <constraint firstAttribute="width" constant="111" id="uq7-31-BzD"/>
+                                    <constraint firstAttribute="height" constant="77" id="xUR-ew-zef"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" title="Take Card">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="takeCardP2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="saC-V8-b0O"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="coder" translatesAutoresizingMaskIntoConstraints="NO" id="FRc-DE-565">
+                                <rect key="frame" x="581" y="423.5" width="167" height="177"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="177" id="KAY-gx-u7K"/>
+                                    <constraint firstAttribute="width" constant="167" id="oOV-Eg-TOO"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="football" translatesAutoresizingMaskIntoConstraints="NO" id="C50-tG-G2Y">
+                                <rect key="frame" x="20" y="413.5" width="160" height="197"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="160" id="47W-dG-tyL"/>
+                                    <constraint firstAttribute="height" constant="197" id="Jp9-NT-DT0"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="woT-gO-MGm" userLabel="Card23">
+                                <rect key="frame" x="20" y="20" width="80" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="150" id="5k5-KM-zTC"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="150" id="8f3-Gr-7Sv"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="150" id="AX6-gT-at9"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="IQz-Cx-Tlo"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="100" id="TO1-kB-39x"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="100" id="fh9-3J-QnQ"/>
+                                    <constraint firstAttribute="height" constant="120" id="gD1-rS-THW"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="100" id="oQH-XZ-S4E"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="120" id="u0h-sy-BeM"/>
+                                    <constraint firstAttribute="width" constant="80" id="xqn-5K-hEb"/>
+                                </constraints>
+                                <state key="normal" title="!">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="pressCard23:" destination="BYZ-38-t0r" eventType="touchUpInside" id="V5D-0L-M5Q"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="woT-gO-MGm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="8LN-NU-xHD"/>
+                            <constraint firstItem="7lC-1V-cYT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BkI-Ym-5Lu"/>
+                            <constraint firstItem="gu9-b9-4f5" firstAttribute="top" secondItem="Ucu-lW-qVY" secondAttribute="bottom" constant="60" id="CUc-Oa-dCI"/>
+                            <constraint firstItem="gge-eg-ezn" firstAttribute="top" secondItem="gu9-b9-4f5" secondAttribute="bottom" constant="58.5" id="FQJ-6Q-qOJ"/>
+                            <constraint firstItem="wsv-87-itX" firstAttribute="leading" secondItem="qG2-bK-RrB" secondAttribute="trailing" constant="70" id="Iiy-GA-fVm"/>
+                            <constraint firstItem="L1x-f8-f8v" firstAttribute="leading" secondItem="zEw-8Z-GMr" secondAttribute="trailing" constant="70" id="KQ0-rc-YK1"/>
+                            <constraint firstItem="gge-eg-ezn" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="135.5" id="LDj-vw-dpm"/>
+                            <constraint firstItem="qG2-bK-RrB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="LFq-C6-QdP"/>
+                            <constraint firstItem="FRc-DE-565" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="LVU-oc-Qw5"/>
+                            <constraint firstAttribute="trailing" secondItem="L1x-f8-f8v" secondAttribute="trailing" constant="20" id="MCJ-fb-LUO"/>
+                            <constraint firstItem="gu9-b9-4f5" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="N0e-tS-KWR"/>
+                            <constraint firstAttribute="trailing" secondItem="FOk-hi-d4R" secondAttribute="trailing" constant="20" id="O5F-bl-Hf8"/>
+                            <constraint firstItem="L1x-f8-f8v" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="20" id="Qtn-fQ-ONN"/>
+                            <constraint firstAttribute="bottom" secondItem="FOk-hi-d4R" secondAttribute="bottom" constant="26" id="RJF-oj-ADM"/>
+                            <constraint firstItem="woT-gO-MGm" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="20" id="Tox-8F-1sx"/>
+                            <constraint firstItem="zEw-8Z-GMr" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="20" id="VhC-Ms-dpJ"/>
+                            <constraint firstAttribute="bottom" secondItem="qG2-bK-RrB" secondAttribute="bottom" constant="26" id="WvR-Pr-NtB"/>
+                            <constraint firstItem="Ucu-lW-qVY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Yo2-sB-imo"/>
+                            <constraint firstItem="FOk-hi-d4R" firstAttribute="leading" secondItem="zvA-kT-DLQ" secondAttribute="trailing" constant="70" id="bGx-8K-iQq"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="zvA-kT-DLQ" secondAttribute="bottom" constant="26" id="cUj-Ho-cwZ"/>
+                            <constraint firstItem="MVR-LA-wPH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fLa-Pi-oND"/>
+                            <constraint firstAttribute="bottom" secondItem="wsv-87-itX" secondAttribute="bottom" constant="26" id="iZa-L5-iXD"/>
+                            <constraint firstItem="MVR-LA-wPH" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="20" id="j4b-FJ-x6e"/>
+                            <constraint firstItem="gu9-b9-4f5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jS7-Kh-IXh"/>
+                            <constraint firstAttribute="trailing" secondItem="FRc-DE-565" secondAttribute="trailing" constant="20" id="k0e-sW-2cT"/>
+                            <constraint firstItem="LZP-Y1-BlT" firstAttribute="leading" secondItem="woT-gO-MGm" secondAttribute="trailing" constant="70" id="mZ9-X0-J7y"/>
+                            <constraint firstAttribute="bottom" secondItem="7lC-1V-cYT" secondAttribute="bottom" constant="26" id="nFe-4o-h5z"/>
+                            <constraint firstItem="LZP-Y1-BlT" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="20" id="oZg-2f-8fA"/>
+                            <constraint firstItem="C50-tG-G2Y" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="pL0-LQ-l7U"/>
+                            <constraint firstItem="C50-tG-G2Y" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="xbD-OY-XC0"/>
+                            <constraint firstItem="gge-eg-ezn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zaP-Ct-INN"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="Card0" destination="FOk-hi-d4R" id="65f-Be-o4y"/>
+                        <outlet property="Card1" destination="L1x-f8-f8v" id="MNd-IN-Tpi"/>
+                        <outlet property="Card11" destination="7lC-1V-cYT" id="g3B-Ln-9ys"/>
+                        <outlet property="Card12" destination="wsv-87-itX" id="fgm-Jb-Iqm"/>
+                        <outlet property="Card13" destination="qG2-bK-RrB" id="VRn-C6-GHu"/>
+                        <outlet property="Card2" destination="zvA-kT-DLQ" id="R1L-Pn-rRh"/>
+                        <outlet property="Card21" destination="MVR-LA-wPH" id="FVK-3o-m9t"/>
+                        <outlet property="Card22" destination="LZP-Y1-BlT" id="G7N-FO-I0A"/>
+                        <outlet property="Card23" destination="woT-gO-MGm" id="F83-gL-5Qw"/>
+                        <outlet property="Card3" destination="zEw-8Z-GMr" id="tm0-2T-ujq"/>
+                        <outlet property="controlGame" destination="gu9-b9-4f5" id="95O-Rn-xGr"/>
+                        <outlet property="takeCardP1" destination="gge-eg-ezn" id="2FB-cZ-EA6"/>
+                        <outlet property="takeCardP2" destination="Ucu-lW-qVY" id="biH-da-PF5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="19.53125" y="16.9921875"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background_table" width="533" height="400"/>
+        <image name="coder" width="293" height="349"/>
+        <image name="football" width="233" height="360"/>
+    </resources>
+</document>
